@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The GACHA Game (Free Spin)</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>The GACHA Game</h1>
+    </header>
+
+    <main>
+      <div class="case-opener">
+        <div class="case-container">
+          <div id="reel" class="reel"></div>
+          <div class="marker"></div>
+        </div>
+
+        <div class="case-buttons">
+          <button id="open-normal-case-btn" class="case-btn normal-case">
+            Spin Common 5 PHP
+          </button>
+          <button id="open-rare-case-btn" class="case-btn rare-case">
+            Spin Premium 10 PHP
+          </button>
+          <button id="open-infinity-case-btn" class="case-btn infinity-case">
+            Spin Infinity 50 PHP
+          </button>
+        </div>
+      </div>
+
+      <div
+        id="won-item-container"
+        class="won-item-modal"
+        style="display: none"
+      ></div>
+
+      <section class="game-info">
+        <div class="live-feed-section">
+          <h2>Recent Wins</h2>
+          <ul id="live-feed-list"></ul>
+        </div>
+      </section>
+
+      <div class="prizes-section">
+        <h2>🏆 Prize Pool & Drop Rates</h2>
+        <ul id="chance-list"></ul>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
